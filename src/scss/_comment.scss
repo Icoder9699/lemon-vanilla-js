@@ -1,0 +1,126 @@
+.comment{
+    &__card{
+        margin-top: 80px;
+        background: #fff;
+        border: 1px solid #ccc;
+        padding: 25px 40px;
+        height: 190px;
+    }
+    &__row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__input-user{
+        margin-right: 20px;
+    }
+    &__input{
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        padding-top: 40px;
+        justify-content: space-between;
+        &-user{
+            width: 55px;
+            height: 55px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-post{
+            height: 40px;
+        }
+    }
+    .input-post{
+        &__input{
+            height: 100%;
+            width: 650px;
+            padding-left: 10px;
+            outline: none;
+            border: 1px solid #ccc;
+            &:focus{
+                border-color: #000;
+            }
+        }
+        &__btn{
+            height: 100%;
+            width: 120px;
+            background: #383737;
+            color: #fff;
+            border: 1px solid #383737;
+            &:hover{
+                border-color: #383737;
+                background-color: transparent;
+                color: #383737;
+            }
+        }
+    }
+
+    // comments 
+    &__comments{
+        margin-top: 80px;
+        border: 1px solid #ccc;
+        padding: 20px 40px;
+    }
+    .comments__title{
+        div{
+            padding-top: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+    }
+    .comments__post{
+        margin-top: 30px;
+        padding: 0 20px;
+        &-user{
+            margin-top: 30px;
+            position: relative;
+            display: flex;
+            .post-user__userimg{
+                margin-right: 20px;
+                width: 60px;
+                height: 60px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .post-user__body{
+                .post-user__title{
+                    margin-bottom: 10px;            
+                }
+                .post-user__name{
+                    margin-bottom: 10px;
+                    font-weight: 900;
+                }
+                .post-user__date{
+                    margin-bottom: 10px;
+                    color: #ccc;
+                    font-size: 14px;
+                }
+                .post-user__img{
+                    margin-bottom: 10px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .post-user__text{
+                    width: 100%;
+                }
+            }
+            .line{
+                position: absolute;
+                bottom: -10px;
+                width: 100%;
+                height: 1px;
+                background-color: #ccc;
+            }
+        }
+    }
+}
+
+
+

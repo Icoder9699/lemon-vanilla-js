@@ -1,0 +1,53 @@
+@import './header';
+@import './hero';
+@import './recipes';
+@import './recipe';
+@import './comment';
+@import './footer';
+@import './modal';
+@import './mobile';
+@import './burger';
+@import './variables';
+@import './fonts';
+
+*, ul li{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+body{
+    font-family: 'JasefinSans Light';
+    font-weight: 600;
+}
+
+.container{
+    max-width: 1090px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+h1{
+    color: blue;
+}
+
+.btn{
+    transition: all 500ms ease;
+    width: 115px;
+    height: 28px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.popup{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.541);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    display: none;
+}

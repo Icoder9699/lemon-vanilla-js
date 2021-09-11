@@ -1,0 +1,206 @@
+@media (max-width: 991px) {
+    .recipes__row{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .comment{
+        &__input-post{
+            .input-post__input{
+                max-width: 450px;
+            }
+        }
+    }
+    .hero{
+        &__content{
+            padding: 20px;
+            width: 450px;
+        }
+    }
+    .recipes__column{
+        margin: 20px 20px;
+        width: 100%;
+        &-img{
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container{
+        max-width: 700px;
+    }
+    .header{
+        &__logo{
+            display: none;
+        }
+        &__nav{
+            &-menu{
+                font-size: 12px;
+            }
+        }
+    }
+    .hero{
+        margin-top: 50px;
+        .hero__row{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__content{
+            padding: 20px;
+            width: 100%;
+            border-bottom: 1px solid #ccc;
+            &-logo{
+                text-align: center;
+            }
+        }
+        &__slider{
+            max-width: 100%;
+            width: 100% !important;
+            &-images{
+                width: 100% !important;
+                img{
+                    width: 100% !important;
+                }
+            }
+        }
+        
+    }
+    .recipe{
+        margin-top: 50px;
+    }
+    .recipes{
+        margin-top: 50px;
+    }
+    .footer{
+        margin-top: 50px;
+        &__logo{
+            display: none;
+        }
+        &__links{
+            font-size: 14px;
+        }
+    }
+    .comment{
+        &__input-post{
+            .input-post__input{
+                max-width: 350px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 576px) {
+    .burger__icon{
+        opacity: 1 !important;
+    }
+    .container{
+        max-width: 576px;
+        margin: 0 auto;
+        padding: 0 !important;
+    }
+    .header{
+        display: block;
+        background: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        background-color: #fff;
+        &__logo{
+            display: block;
+        }
+        &__row{
+            justify-content: space-around;
+            height: 50px;
+            align-items: center;
+            
+        }
+        &__nav-menu{
+            display: none;
+        }
+    }
+
+    .footer{
+        .container{
+            padding: 0 10px !important;
+        }
+        &__row{
+            padding: 10px 20px;
+            height: 100%;
+            flex-wrap: wrap;
+            border-bottom: 1 solid #fff;
+        }
+        &__logo{
+            display: block;
+        }
+        &__links{
+            text-align: right;
+            flex-direction: column;
+            margin-left: 40px;
+            li{
+                margin-bottom: 20px;
+            }
+        }
+        &__info{
+            display: none;
+        }
+    }
+    .recipe{
+        &__row{
+            flex-wrap: wrap;
+        }
+        &__image{
+            width: 100%;
+            border-bottom: 1px solid rgb(153, 153, 153);
+        }
+        &__content{
+            width: 100%;
+        }
+    }
+    .comment{
+        &__card{
+            padding: 10px;
+        }
+        &__input{
+            padding: 20px;
+        }
+        &__comments{
+            padding: 10px;
+        }
+        &__input-post{
+            .input-post__input{
+                max-width: 250px;
+            }
+            .input-post__btn{
+                width: 60px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 350px) {
+    .comment{
+        &__input{
+            padding: 10px;
+        }
+        &__input-user{
+            display: none;
+        }
+        &__input-post{
+            width: 250px;
+            margin: 0 auto;
+            margin-top: 20px;
+            .input-post__input{
+                max-width: 100%;
+            }
+            .input-post__btn{
+                margin-top: 10px;
+                width: 100%;
+            }
+        }
+    }
+}

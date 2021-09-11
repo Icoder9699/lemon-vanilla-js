@@ -1,0 +1,98 @@
+.header{
+    background: rgb(233, 233, 233);
+    box-shadow: 0 0 5px rgb(155, 155, 155);
+    &__row{
+        height: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__nav{
+        &-menu{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style-type: none;
+            li{
+                position: relative;
+                cursor: pointer;
+                margin: 0 12px;
+                text-transform: uppercase;
+                &::before{
+                    content: '';
+                    width: 0%;
+                    height: 1.5px;
+                    background-color: #000;
+                    position: absolute;
+                    bottom: -3px;
+                }
+                &:hover{
+                    color: rgb(160, 160, 160);
+                }
+                &.active::before{
+                    transition: all 300ms ease-in;
+                    width: 100%;
+                }
+            }
+            .menu__link-recipes{
+                position: relative;
+                z-index: 2;
+                .recipes__menu{
+                    display: none;
+                    backdrop-filter: blur(4px);
+                    font-size: 12px;
+                    position: absolute;
+                    top: 30px;
+                    width: 150px;
+                    padding: 20px;
+                    background: rgba(255, 255, 255, 0.445);
+                    box-shadow: 0 0 2px #ccc;
+                    &.active{
+                        display: block;
+                    }
+                    &:hover{
+                        color: #000;
+                        opacity: 1;
+                    }
+                    li{
+                        margin: 0;
+                        margin-bottom: 15px;
+                        color: #ccc;
+                        &:hover{
+                            color: #000;
+                        }
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__search{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 160px;
+        height: 30px;
+        border: 1px solid #ccc;
+        background: #fff;
+        padding-left: 10px;
+        border-radius: 4px;
+        span{
+            margin-top: 5px;
+        }
+        input{
+            border: none;
+            height: 100%;
+            width: 100%;
+            outline: none;
+            padding-left: 10px;
+        }
+        &:focus {
+            border-color: transparent;
+            box-shadow: 0 0 5px #000;
+        }
+    }
+
+}

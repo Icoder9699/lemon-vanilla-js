@@ -1,0 +1,32 @@
+.footer{
+    background: #2f2f2f;
+    margin-top: 80px;
+    color: #7d7d7d;
+    &__row{
+        height: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__links{
+        display: flex;
+        li{
+            cursor: pointer;
+            transition: all 300ms ease-in-out;
+            margin-right: 18px;
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+    &__info{
+        margin-top: 25px;
+        &-company{
+            margin-bottom: 10px;
+        }
+        &-icons{
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
